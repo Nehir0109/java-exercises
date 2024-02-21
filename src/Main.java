@@ -31,7 +31,7 @@ import java.util.Scanner;
     }*/
 
 // Çift veya tek kontrolü:
-public class Main {
+/*public class Main {
     public static void main(String[] args){
         Scanner get = new Scanner(System.in);
 
@@ -43,5 +43,28 @@ public class Main {
         } else if (sayi % 2 == 1 || sayi % 2 == -1){
             System.out.println("Tek sayı");
         }
+    }
+*/
+
+// Basit Faiz Hesaplayıcı:
+
+public class Main {
+    public static void main(String[] args){
+        Scanner get = new Scanner(System.in);
+
+        System.out.println("Ana para miktarını giriniz: ");
+        Double para = get.nextDouble();
+
+        System.out.println("Faiz oranını giriniz: ");
+        Double faiz= get.nextDouble();
+
+        System.out.println("Süre giriniz(Ay): ");
+        Double sure= get.nextDouble();
+
+        double sonuc = (para/100)* (faiz/12)* sure;
+
+        System.out.printf("Sonuç: %f", sonuc);
+
+
     }
 }
