@@ -71,7 +71,7 @@ import java.util.Scanner;
 
 //Not Hesaplayıcı:
 
-public class Main {
+/*public class Main {
     public static void main(String[] args){
         Scanner get = new Scanner(System.in);
 
@@ -95,5 +95,28 @@ public class Main {
             System.out.println("FF");
         }
 
+    }
+}*/
+
+
+//Bir sayının üssünü alma:
+
+public class Main {
+    public static void main(String[] args){
+        Scanner get = new Scanner(System.in);
+
+        System.out.println("Bir sayının üssünü alma");
+        System.out.println("Tabanı giriniz: ");
+        Double taban= get.nextDouble();
+
+        System.out.println("Üssü giriniz: ");
+        Double us= get.nextDouble();
+
+        double sonuc= 1;
+
+        for(int i=0; i<us; i++){
+            sonuc*=taban;
+        }
+        System.out.printf("Sonuç= %f", sonuc);
     }
 }
