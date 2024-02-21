@@ -1,6 +1,6 @@
 import java.util.Scanner;
 // HESAP MAKİNESİ
-public class Main {
+/*public class Main {
     public static void main(String[] args) {
 
         Scanner scanner = new Scanner(System.in);
@@ -28,4 +28,20 @@ public class Main {
         System.out.printf("Sonuç= %f", sonuc);
 
         }
+    }*/
+
+// Çift veya tek kontrolü:
+public class Main {
+    public static void main(String[] args){
+        Scanner get = new Scanner(System.in);
+
+        System.out.println("Bir sayı giriniz: ");
+        Integer sayi= get.nextInt();
+
+        if(sayi % 2 ==0){
+            System.out.println("Çift sayı");
+        } else if (sayi % 2 == 1 || sayi % 2 == -1){
+            System.out.println("Tek sayı");
+        }
     }
+}
