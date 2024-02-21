@@ -48,7 +48,7 @@ import java.util.Scanner;
 
 // Basit Faiz Hesaplayıcı:
 
-public class Main {
+/*public class Main {
     public static void main(String[] args){
         Scanner get = new Scanner(System.in);
 
@@ -65,6 +65,35 @@ public class Main {
 
         System.out.printf("Sonuç: %f", sonuc);
 
+
+    }
+}*/
+
+//Not Hesaplayıcı:
+
+public class Main {
+    public static void main(String[] args){
+        Scanner get = new Scanner(System.in);
+
+        System.out.println("Puanınızı Giriniz: ");
+        Integer puan = get.nextInt();
+
+        System.out.print("Puanınız: " + puan + ", Notunuz: ");
+        if (puan >= 90) {
+            System.out.println("AA");
+        } else if (puan >= 80) {
+            System.out.println("BA");
+        } else if (puan >= 70) {
+            System.out.println("BB");
+        } else if (puan >= 60) {
+            System.out.println("CB");
+        } else if (puan >= 50) {
+            System.out.println("CC");
+        } else if (puan >= 40) {
+            System.out.println("DC");
+        } else {
+            System.out.println("FF");
+        }
 
     }
 }
