@@ -101,7 +101,7 @@ import java.util.Scanner;
 
 //Bir sayının üssünü alma:
 
-public class Main {
+/*public class Main {
     public static void main(String[] args){
         Scanner get = new Scanner(System.in);
 
@@ -118,5 +118,33 @@ public class Main {
             sonuc*=taban;
         }
         System.out.printf("Sonuç= %f", sonuc);
+    }
+}*/
+
+//Üç sayı arasında en büyük:
+
+public class Main {
+    public static void main(String[] args){
+        Scanner get = new Scanner(System.in);
+
+        System.out.println("Birinci sayıyı girin: ");
+        Double num1 = get.nextDouble();
+
+        System.out.println("İkinci sayıyı girin: ");
+        Double num2 = get.nextDouble();
+
+        System.out.println("Üçüncü sayıyı girin: ");
+        Double num3 = get.nextDouble();
+
+        Double enBuyuk = num1;
+
+        if(num2 > num1){
+            enBuyuk = num2;
+        }
+        if(num3> num2){
+            enBuyuk = num3;
+        }
+
+        System.out.printf("En büyük sayı: %f", enBuyuk);
     }
 }
