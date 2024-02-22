@@ -1,74 +1,25 @@
 import java.util.Scanner;
 
-// Telefon numarası biçimlendirme:
-/*public class Main {
-    public static void main(String[] args) {
-        Scanner get = new Scanner(System.in);
-
-        System.out.println("On haneli telefon numaranızı girin: ");
-        String telefonNo= get.nextLine();
-
-        if( telefonNo.length() == 10) {
-            String yeniNo = "(" + telefonNo.substring(0,3) + ")" + telefonNo.substring(3,6) + "-" + telefonNo.substring(6,10);
-            System.out.println("Biçimlendirilmiş no: "+ yeniNo);
-        }else {
-            System.out.println("Hata! Lüten 10 haneli bir telefon numarası girin.");
-        }
-
-    }
-}*/
-
-//Tarih biçimlendirme:
-/*public class Main{
+//Basit Hesaplamalar:
+public class Main{
     public static void main(String[] args){
-        Scanner get = new Scanner(System.in);
+        Scanner get= new Scanner(System.in);
 
-        System.out.println("Lütfen bir tarih girin (YYYY-AA-GG): ");
-        String tarih =  get.nextLine();
+        System.out.println("Birinci Sayıyı Girin: ");
+        Double num1 = get.nextDouble();
 
-        int yil = Integer.parseInt(tarih.substring(0, 4));
-        int ay = Integer.parseInt(tarih.substring(5, 7));
-        int gun = Integer.parseInt(tarih.substring(8, 10));
+        System.out.println("İkinci Sayıyı Girin: ");
+        Double num2 = get.nextDouble();
 
-        String ayAdi= "";
-        switch(ay){
-            case 1: ayAdi = "Ocak"; break;
-            case 2: ayAdi= "Şubat"; break;
-            case 3: ayAdi= "Mart"; break;
-            case 4: ayAdi= "Nisan"; break;
-            case 5: ayAdi= "Mayıs"; break;
-            case 6: ayAdi= "Haziran"; break;
-            case 7: ayAdi= "Temmuz"; break;
-            case 8: ayAdi= "Ağustos"; break;
-            case 9: ayAdi= "Eylül"; break;
-            case 10: ayAdi= "Ekim"; break;
-            case 11: ayAdi= "Kasım"; break;
-            case 12: ayAdi= "Aralık"; break;
-            default: break;
-        }
+        Double toplama = num1+ num2;
+        Double cikarma = num1- num2;
+        Double carpma= num1 * num2;
+        Double bolme = num1 / num2;
 
-        System.out.printf("Biçimlendirilmiş Tarih: %s %d, %d \n", ayAdi, gun, yil);
-
-    }
-}*/
-
-
-//Dize yer tutucu değiştirme:
-public class Main {
-    public static void main(String[] args){
-        Scanner get = new Scanner(System.in);
-
-        System.out.println("Adınız: ");
-        String ad = get.nextLine();
-
-        System.out.println("Soyadınız: ");
-        String soyad = get.nextLine();
-
-        String karsilama= "Merhaba, ";
-
-        System.out.printf(karsilama+ "%s %s!", ad,soyad);
-
-
-
+        System.out.printf(" %f + %f = %f \n", num1, num2, toplama);
+        System.out.printf(" %f - %f = %f \n", num1, num2, cikarma);
+        System.out.printf(" %f x %f = %f \n", num1, num2, carpma);
+        System.out.printf(" %f / %f = %f \n", num1, num2, bolme);
+        
     }
 }
