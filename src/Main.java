@@ -26,7 +26,7 @@ import java.util.Scanner;
 
 //Sınav Notu hesaplayıcı
 
-public class Main{
+/*public class Main{
     public static void main(String[] args){
         Scanner get= new Scanner(System.in);
 
@@ -42,6 +42,32 @@ public class Main{
         }else {
             System.out.println("Hata! Lütfen geçerli bir not giriniz.");
         }
+
+    }
+}*/
+
+//Dört işlem hesaplayıcı
+public class Main{
+    public static void main(String[] args){
+        Scanner get= new Scanner(System.in);
+
+        System.out.println("Birinci sayıyı girin: ");
+        Double num1 = get.nextDouble();
+
+        System.out.println("Yapmak istediğiniz işlemi girin: (+, - , x , /");
+        char islem = get.next().charAt(0);
+
+        System.out.println("İkinci Sayıyı giriniz: ");
+        Double num2 = get.nextDouble();
+
+        Double sonuc= 0.0;
+        switch(islem){
+            case '+': sonuc= num1 + num2;break;
+            case '-': sonuc= num1-num2; break;
+            case 'x': sonuc= num1 * num2; break;
+            case '/': sonuc= num1/ num2; break;
+        }
+        System.out.printf("%f %s %f = %f",num1, islem, num2, sonuc);
 
     }
 }
