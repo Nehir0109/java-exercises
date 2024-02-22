@@ -73,7 +73,7 @@ import java.util.Scanner;
 }*/
 
 //Haftanın Günleri
-public class Main{
+/*public class Main{
     public static void main(String[] args){
         Scanner get = new Scanner(System.in);
 
@@ -108,4 +108,23 @@ public class Main{
 
     }
 
+}*/
+
+//Ürün indirim hesaplayıcı:
+
+public class Main{
+    public static void main(String[] args){
+        Scanner get= new Scanner(System.in);
+
+        System.out.println("Ürünün etiket fiyatını giriniz: ");
+        Double etiket = get.nextDouble();
+
+        System.out.println("İndirim yüzdesini girin: ");
+        Double yuzde = get.nextDouble();
+
+        Double indirim= etiket * yuzde / 100;
+        Double yenifiyat = etiket - indirim;
+
+        System.out.printf("İndirimli fiyatı: %f", yenifiyat);
+    }
 }
