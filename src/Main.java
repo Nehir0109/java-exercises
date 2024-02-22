@@ -19,7 +19,7 @@ import java.util.Scanner;
 }*/
 
 //Tarih biçimlendirme:
-public class Main{
+/*public class Main{
     public static void main(String[] args){
         Scanner get = new Scanner(System.in);
 
@@ -48,6 +48,27 @@ public class Main{
         }
 
         System.out.printf("Biçimlendirilmiş Tarih: %s %d, %d \n", ayAdi, gun, yil);
+
+    }
+}*/
+
+
+//Dize yer tutucu değiştirme:
+public class Main {
+    public static void main(String[] args){
+        Scanner get = new Scanner(System.in);
+
+        System.out.println("Adınız: ");
+        String ad = get.nextLine();
+
+        System.out.println("Soyadınız: ");
+        String soyad = get.nextLine();
+
+        String karsilama= "Merhaba, ";
+
+        System.out.printf(karsilama+ "%s %s!", ad,soyad);
+
+
 
     }
 }
