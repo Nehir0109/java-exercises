@@ -1,15 +1,150 @@
-//TIP To <b>Run</b> code, press <shortcut actionId="Run"/> or
-// click the <icon src="AllIcons.Actions.Execute"/> icon in the gutter.
-public class Main {
+import java.util.Scanner;
+// HESAP MAKİNESİ
+/*public class Main {
     public static void main(String[] args) {
-        //TIP Press <shortcut actionId="ShowIntentionActions"/> with your caret at the highlighted text
-        // to see how IntelliJ IDEA suggests fixing it.
-        System.out.printf("Hello and welcome!");
 
-        for (int i = 1; i <= 5; i++) {
-            //TIP Press <shortcut actionId="Debug"/> to start debugging your code. We have set one <icon src="AllIcons.Debugger.Db_set_breakpoint"/> breakpoint
-            // for you, but you can always add more by pressing <shortcut actionId="ToggleLineBreakpoint"/>.
-            System.out.println("i = " + i);
+        Scanner scanner = new Scanner(System.in);
+
+        System.out.println("Birinci sayıyı giriniz: ");
+        double birinciSayi = scanner.nextDouble();
+
+        System.out.println("Yapmak istediğiniz işlemi seçin: (+ , - , x , / ) ");
+        char secilenİslem= scanner.next().charAt(0);
+
+        System.out.println("İkinci sayıyı giriniz: ");
+        double ikinciSayi = scanner.nextDouble();
+
+
+
+        double sonuc = 0.0;
+
+        switch(secilenİslem) {
+            case '+': sonuc= birinciSayi + ikinciSayi; break;
+            case '-': sonuc= birinciSayi - ikinciSayi; break;
+            case 'x': sonuc= birinciSayi * ikinciSayi; break;
+            case '/': sonuc= birinciSayi / ikinciSayi;
         }
+
+        System.out.printf("Sonuç= %f", sonuc);
+
+        }
+    }*/
+
+// Çift veya tek kontrolü:
+/*public class Main {
+    public static void main(String[] args){
+        Scanner get = new Scanner(System.in);
+
+        System.out.println("Bir sayı giriniz: ");
+        Integer sayi= get.nextInt();
+
+        if(sayi % 2 ==0){
+            System.out.println("Çift sayı");
+        } else if (sayi % 2 == 1 || sayi % 2 == -1){
+            System.out.println("Tek sayı");
+        }
+    }
+*/
+
+// Basit Faiz Hesaplayıcı:
+
+/*public class Main {
+    public static void main(String[] args){
+        Scanner get = new Scanner(System.in);
+
+        System.out.println("Ana para miktarını giriniz: ");
+        Double para = get.nextDouble();
+
+        System.out.println("Faiz oranını giriniz: ");
+        Double faiz= get.nextDouble();
+
+        System.out.println("Süre giriniz(Ay): ");
+        Double sure= get.nextDouble();
+
+        double sonuc = (para/100)* (faiz/12)* sure;
+
+        System.out.printf("Sonuç: %f", sonuc);
+
+
+    }
+}*/
+
+//Not Hesaplayıcı:
+
+/*public class Main {
+    public static void main(String[] args){
+        Scanner get = new Scanner(System.in);
+
+        System.out.println("Puanınızı Giriniz: ");
+        Integer puan = get.nextInt();
+
+        System.out.print("Puanınız: " + puan + ", Notunuz: ");
+        if (puan >= 90) {
+            System.out.println("AA");
+        } else if (puan >= 80) {
+            System.out.println("BA");
+        } else if (puan >= 70) {
+            System.out.println("BB");
+        } else if (puan >= 60) {
+            System.out.println("CB");
+        } else if (puan >= 50) {
+            System.out.println("CC");
+        } else if (puan >= 40) {
+            System.out.println("DC");
+        } else {
+            System.out.println("FF");
+        }
+
+    }
+}*/
+
+
+//Bir sayının üssünü alma:
+
+/*public class Main {
+    public static void main(String[] args){
+        Scanner get = new Scanner(System.in);
+
+        System.out.println("Bir sayının üssünü alma");
+        System.out.println("Tabanı giriniz: ");
+        Double taban= get.nextDouble();
+
+        System.out.println("Üssü giriniz: ");
+        Double us= get.nextDouble();
+
+        double sonuc= 1;
+
+        for(int i=0; i<us; i++){
+            sonuc*=taban;
+        }
+        System.out.printf("Sonuç= %f", sonuc);
+    }
+}*/
+
+//Üç sayı arasında en büyük:
+
+public class Main {
+    public static void main(String[] args){
+        Scanner get = new Scanner(System.in);
+
+        System.out.println("Birinci sayıyı girin: ");
+        Double num1 = get.nextDouble();
+
+        System.out.println("İkinci sayıyı girin: ");
+        Double num2 = get.nextDouble();
+
+        System.out.println("Üçüncü sayıyı girin: ");
+        Double num3 = get.nextDouble();
+
+        Double enBuyuk = num1;
+
+        if(num2 > num1){
+            enBuyuk = num2;
+        }
+        if(num3> num2){
+            enBuyuk = num3;
+        }
+
+        System.out.printf("En büyük sayı: %f", enBuyuk);
     }
 }
