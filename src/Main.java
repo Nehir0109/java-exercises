@@ -54,7 +54,7 @@ import java.util.Scanner;
 
 
 //Dize yer tutucu değiştirme:
-public class Main {
+/*public class Main {
     public static void main(String[] args){
         Scanner get = new Scanner(System.in);
 
@@ -68,6 +68,20 @@ public class Main {
 
         System.out.printf(karsilama+ "%s %s!", ad,soyad);
 
+
+
+    }
+}*/
+
+// Para Birimi Biçimlendirme:
+
+public class Main {
+    public static void main(String[] args){
+
+        double number= 1234567.89;
+        String formattedNumber= String.format("%,.2f", number);
+
+        System.out.println(formattedNumber+"$");
 
 
     }
